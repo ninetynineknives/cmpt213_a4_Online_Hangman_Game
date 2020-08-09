@@ -1,0 +1,27 @@
+<!-- NAME: Veronica Lund-->
+<!-- SFUID: 301292997-->
+<!-- EMAIL: vlund@sfu.ca-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/styles/main.css}" rel="stylesheet" />
+    <title>CMPT 213 Online Hangman Game</title>
+</head>
+<body>
+<div>
+    <img th:src="@{/images/SFULogo.jpg}" />
+</div>
+<div>
+    <h1>CMPT 213 Online Hangman Game</h1>
+</div>
+<div>
+    <h3>Veronica Lund SFUID : 301292997</h3>
+</div>
+
+<form action="#" th:action="@{/game}" method="post">
+    <button class ="center" type="submit">Start a new game!</button>
+</form>
+</body>
+</html>

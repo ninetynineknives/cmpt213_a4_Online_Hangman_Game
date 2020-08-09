@@ -1,5 +1,14 @@
+/**
+ * NAME: Veronica Lund
+ * SFUID: 301292997
+ * EMAIL: vlund@sfu.ca
+ */
 package ca.cmpt213.a4.onlinehangman.model;
 
+/**
+ * Class provided to easily store messages for display
+ * @author Veronica Lund
+ */
 public class Message {
     private String message;
 

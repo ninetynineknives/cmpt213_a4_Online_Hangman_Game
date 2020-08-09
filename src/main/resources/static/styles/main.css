@@ -1,3 +1,60 @@
 html {
     font-family: sans-serif;
 }
+body {}
+h1 {
+    display:inline-block;
+    margin-right:10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2 {
+    display:inline-block;
+    margin-right:10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+h3 {
+    display:inline-block;
+    margin-right:10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+p {
+    display:inline-block;
+    margin-right:10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div {
+  margin-left: auto;
+  margin-right: auto;
+    text-align: center;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#guessButton {display:inline-block;margin-right:10px;}
+#pic {display:inline-block;margin-right:10px;}

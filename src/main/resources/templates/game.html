@@ -1,0 +1,50 @@
+<!-- NAME: Veronica Lund-->
+<!-- SFUID: 301292997-->
+<!-- EMAIL: vlund@sfu.ca-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/styles/main.css}" rel="stylesheet" />
+    <title>CMPT 213 Online Hangman Game</title>
+</head>
+<body>
+<img th:src="@{/images/SFULogo.jpg}" />
+<div>
+    <h1>Game #</h1>
+    <h1 th:text="${game.id}"></h1>
+</div>
+<div>
+    <h3> Status: </h3>
+    <h3 th:text="${game.status}"></h3>
+</div>
+<div>
+    <p>Progress: </p>
+    <p th:text="${game.messageAsString}"></p>
+</div>
+<div>
+    <p>You have made</p>
+    <p th:text="${game.numGuesses}"></p>
+    <p>guesses, out of which</p>
+    <p th:text="${game.numBadGuesses}"></p>
+    <p>are incorrect.</p>
+</div>
+<div>
+    <form th:action="@{/guess}" method="post" th:object="${currentGuess}">
+        <label>Your guess:</label>
+        <input type="text" th:field="*{message}" /><br/>
+        <button id="guessButton" type="submit">Guess</button>
+    </form>
+</div>
+<div>
+    <p>Previous guesses:</p>
+    <p th:text="${game.guessedCharsPretty}"></p>
+</div>
+<div>
+    <form action="#" th:action="@{/welcome}" method="get">
+        <button type="submit">Go back to welcome page</button>
+    </form>
+</div>
+</body>
+</html>
